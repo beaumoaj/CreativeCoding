@@ -1,0 +1,103 @@
+---
+layout: post
+title: "Playing with a Canvas"
+date: 2026-11-02 14:58
+categories: ps5js canvas
+---
+
+# Using the p5js editor to create a canvas 
+
+We are going to use the p5js code editor to start with a blank canvas, understand how to specify its width and height and then change its color.
+
+Go to the [P5JS Editor](https://editor.p5js.org/) and create yourself an account and login.  Note that if you don't create an account, you can't save your work.
+
+## The P5JS Editor
+
+We are going to code using a code editor that runs in your web browser.  You can learn how to use it by reading the p5js documentation.  I'll walk you through what to do here.  Note that in the first step, the link opens in a new tab so that you can switch between tabs to follow the steps.
+
+1.  Click on the link to the <a href="https://p5js.org/tutorials/setting-up-your-environment/#web-editor" target="_blank">web editor documentation</a> (this opens in a new tab, then come back here.  We will be using the p5js Web Editor rather than VS Code, so you should follow the steps to set up your environment in the Web Editor.
+1. Follow Step 1 and Step 2 to open the p5js Web Editor and sign up for a new account.  You can sign up by entering yoru details on the signup form or you can sign up with your Google or GitHub account if you have one of those.
+1. Step 3 shows you around the p5js Web Editor.  There are only a few controls that you will need to learn right now.
+1. Step 4 walks you through how to name, save and run your first sketch.
+1.  When you finish Step 4, come back here and we will get started on sketching with p5js.
+
+## Your first program
+
+The first p5js program that was created automatically for you when you opened the Web Editor can be edited and changed.  I am going to walk you through what the starting code does and then how to draw a line on the blank canvas.
+
+1.  The starting program has two blocks of code to define what are called functions (because they start with the word `function`). Each block starts with the word `function`, followed by a name like `setup()`.  You will see an opening curly bracket, which looks like this `{`, and a closing curly bracket which looks like this `}`.  The function ends with the closing curly bracket (the one that looks like this `}`) and what we call the body of the function is made up of the lines of code between those curly brackets.
+1.  There are two functions.  One is called `setup()` and the other is called `draw()`.  Have a look at them both in the editor window.  The setup function looks like this:
+```javascript
+function setup() {
+  createCanvas(400,400);
+}
+```
+and the draw function looks like this:
+```javascript
+function draw() {
+  background(220);
+}
+```
+Notice that lines inside the body of the functions end in a semi-colon (`;`).  Things can go wrong if you miss out a semi-colon or if you miss out a bracket.
+1. If we need to do any **preparation** work for our sketch, we do it in the `setup`.  For example, in the starter code contains the line `createCanvas(400, 400);` to create a blank canvas which is 400 wide and 400 high.  The numbers represent pixels which are the smallest individual unit or building block of our computer screen.
+1.  When we write code to **draw** our sketch, we change the content of the `draw` function.  The starting content of `draw` says to make the background a very light grey colour (thats what the `220` means, but more on that later).
+
+## Some experiments to try
+
+For these exercises we will only change the numbers used to create the canvas.  The first 400 defines the **width** of the canvas and the second 400 defines the **height** of the canvas.  Try these changes:
+
+1. Make your canvas wider by increasing the first 400 to something larger.  Try to make it 500 pixels wide.  The line will look like this:
+```javascript
+createCanvas(500, 400);
+```
+then click the run button <img height="20em" src="/assets/post001/runButton.png" /> to see the wider canvas.
+1.  How would you make a canvas 200 pixels wide?  Try it now and see if you were right.
+1.  We can make the canvas shorter or taller by changing the second 400 value to a bigger or smaller number.  If we wanted a canvas that was 300 pixels wide and 600 pixels tall we would change the `createCanvas` to look like this:
+```javascript
+createCanvas(300,600);
+```
+Don't forget to click the run button <img height="20em" src="/assets/post001/runButton.png" /> after you change the code to see the effect of your changes.
+
+The next few exercises will change the colour of the canvas.
+
+1.  Find the line in your `draw` function that looks like this:
+```javascript
+background(220);
+```
+That number `229` specifies a shade of gray for the background.  This value can actually be anything between `0` and `255`.  A lower number makes the background darker and a higher number makes it lighter.
+1.  Make the background black by changing the code inside `draw` to be:
+```javascript
+background(0);
+```
+1.  Make the background white by changing the code inside `draw` to be:
+```javascript
+background(255);
+```
+1.  Make the background another shade of grey by using another value bigger than `0` and smaller than `255`.
+
+## Using colours
+
+Shades of gray are fine but a bit boring.  P5js allows us to mix our own colours by specifying a mix of red, green and blue.  Just like our gray shade we use numbers whoise value can be between `0` and `255` for each of these primary colours.
+
+For example, a red background uses maximum red (`255`) and minimum green and blue (`0`).  We use the `background` command again but this time with our three values for the mix of red, green and blue.
+```javascript
+background(255,0,0);
+```
+
+For a blue background we use minimum red and green (`0`) and maximum blue (`255`)
+```javascript
+background(0,0,255);
+```
+
+For a darker shade of blue try this:
+```javascript
+background(0,0,100);
+```
+
+For a lighter shade of blue, try increasing the amount of red and green in our mix and set a blue value which is higher (so we get more blue than the other two colours)
+```javascript
+background(115,153,222);
+```
+
+If you want to experiment with background colours you can use this <a target="_blank" href="https://rgbcolorpicker.com/">RGB color picker</a> and copying the R, G and B values from that page into your `background` command.
+
