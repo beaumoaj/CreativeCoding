@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Playing with a Canvas"
+title: "Using a Canvas"
 date: 2026-11-02 14:58
 categories: ps5js canvas
 ---
@@ -50,13 +50,13 @@ For these exercises we will only change the numbers used to create the canvas.  
 ```javascript
 createCanvas(500, 400);
 ```
-then click the run button <img height="20em" src="/assets/post001/runButton.png" /> to see the wider canvas.
+then click the run button <img height="20em" src="./runButton.png" /> to see the wider canvas.
 1.  How would you make a canvas 200 pixels wide?  Try it now and see if you were right.
 1.  We can make the canvas shorter or taller by changing the second 400 value to a bigger or smaller number.  If we wanted a canvas that was 300 pixels wide and 600 pixels tall we would change the `createCanvas` to look like this:
 ```javascript
 createCanvas(300,600);
 ```
-Don't forget to click the run button <img height="20em" src="/assets/post001/runButton.png" /> after you change the code to see the effect of your changes.
+Don't forget to click the run button <img height="20em" src="./runButton.png" /> after you change the code to see the effect of your changes.
 
 The next few exercises will change the colour of the canvas.
 
