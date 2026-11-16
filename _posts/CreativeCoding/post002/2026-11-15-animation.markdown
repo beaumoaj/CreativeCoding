@@ -39,7 +39,7 @@ In the `ellipse` command above, `200` is the X coordinate of the ellipse and `10
 
 Your sketch should look like this:
 
-<img src="/assets/post002/SimpleEllipse.png" />
+<img src="/CreativeCoding/assets/post002/SimpleEllipse.png" />
 
 ## The coordinate system
 
@@ -156,7 +156,7 @@ Edit your code to use the `xp` variable.  The sketch should look exactly the sam
 
 ### What is the point
 
-We will now see that the point is that we can change the value of a variable to make things happen in our sketch.  In the code below we add `1` to the value of `xp` in the `draw` function.  The `draw` function is actually called 20 times a second so adding 1 to `xp` happens again and again.  We need to click the stop button <img width="20em" src="/assets/post002/stopButton.png" /> otherwise the program runs forever with the circle disappearing off the right hand side of the canvas.
+We will now see that the point is that we can change the value of a variable to make things happen in our sketch.  In the code below we add `1` to the value of `xp` in the `draw` function.  The `draw` function is actually called 20 times a second so adding 1 to `xp` happens again and again.  We need to click the stop button <img width="20em" src="/CreativeCoding/assets/post002/stopButton.png" /> otherwise the program runs forever with the circle disappearing off the right hand side of the canvas.
 
 ```javascript
 function draw() {
@@ -172,7 +172,7 @@ Click the stop button and make the change to `xp` subtract `1` rather than addin
 ```javascript
 xp = xp - 1;
 ```
-This time you should see the circle move to the left and again you need to click the stop button <img width="20em" src="/assets/post002/stopButton.png" /> to stop your program running.
+This time you should see the circle move to the left and again you need to click the stop button <img width="20em" src="/CreativeCoding/assets/post002/stopButton.png" /> to stop your program running.
 
 ### Summary
 
